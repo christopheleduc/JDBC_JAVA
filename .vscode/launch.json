@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "mainClass": "warriors.client.console.ClientConsole"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ClientConsole<Java_Warriors>",
+            "request": "launch",
+            "mainClass": "warriors.client.console.ClientConsole",
+            "projectName": "Java_Warriors"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimeStamp<Java_Warriors>",
+            "request": "launch",
+            "mainClass": "warriors.engine.TimeStamp",
+            "projectName": "Java_Warriors"
+        }
+    ]
+}
