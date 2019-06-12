@@ -43,6 +43,8 @@ public class ClientConsole {
 		JdbcEngine jdbcInstance = new JdbcEngine();
 		listDeHeros = jdbcInstance.getHeroes();
 		//System.out.println(listDeHeros);
+		System.out.println("*******************************************");
+		jdbcInstance.getHero(2);
 		
 
 		WarriorsAPI warriors = new Warriors();

@@ -2,6 +2,7 @@ package warriors.engine;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -71,7 +72,43 @@ public class JdbcEngine {
       return retourEcran; 
       }
 
-      public String getHero(String id) {
+      public ArrayList<String> getHero(int Id) {
+        
+      // CONNEXION A LA BASE DE DONNEES  
+	     try{
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        connection = DriverManager.getConnection(url, user, passwd);
+        //prepared statement
+        String query = "SELECT id, type, nom, vie, attack, arme, bouclier from hero where id = ?";
+        PreparedStatement ps=connection.prepareStatement(query);
+        ps.setInt(1, Id);
+        rs = ps.executeQuery();
+        //st=connection.createStatement();
+        // rs=st.executeQuery("SELECT id, type, nom, vie, attack, arme, bouclier from hero where id = ?");
+        //rs.getInt(1, Id);
+        rs.next(); 	
+          idPersonnage = rs.getInt("id");
+          namePersonnage = rs.getString("nom");
+          typePersonnage = rs.getString("type");
+          viePersonnage = rs.getInt("vie");
+          attackPersonnage = rs.getInt("attack");
+          armePersonnage = rs.getString("arme");
+          bouclierPersonnage = rs.getString("bouclier");       	             
+          System.out.println ("Hero: " + "[ID: " + idPersonnage + " ]" + "[Nom: " + namePersonnage + " ]" + "[Type: " + typePersonnage + " ]" + "[Vie: " + viePersonnage + " ]" + "[Attack: " + attackPersonnage + " ]" + "[Arme: " + armePersonnage + " ]" + "[Bouclier: " + bouclierPersonnage+ " ]" );
+          retourEcran.add("Hero: " + "[ID: " + idPersonnage + " ]" + "[Nom: " + namePersonnage + " ]" + "[Type: " + typePersonnage + " ]" + "[Vie: " + viePersonnage + " ]" + "[Attack: " + attackPersonnage + " ]" + "[Arme: " + armePersonnage + " ]" + "[Bouclier: " + bouclierPersonnage+ " ]" );
+         
+
+        } catch (Exception e) {
+          e.printStackTrace();
+        } finally {
+          if (connection != null)
+            try { /* Close connexion */
+              connection.close();
+      } catch ( SQLException ignore ) {
+        
+      }
+    }
+    //return retourEcran; 
         return null;
       }
 
