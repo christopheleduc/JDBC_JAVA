@@ -40,11 +40,17 @@ public class ClientConsole {
 		  } 
 		ArrayList<String> listDeHeros = new ArrayList<>();
 
-		JdbcEngine jdbcInstance = new JdbcEngine();
-		listDeHeros = jdbcInstance.getHeroes();
+		JdbcEngine jdbcInstance = new JdbcEngine(); // Instancie JdbcEngine.
+		System.out.println("*******************************************************");
+		System.out.println("Affiche la liste des Héros:");
+		listDeHeros = jdbcInstance.getHeroes(); // Affiche la liste des Héros; Méthode getHeroes.
 		//System.out.println(listDeHeros);
-		System.out.println("*******************************************");
-		jdbcInstance.getHero(2);
+		System.out.println("*******************************************************");
+		System.out.println("Affiche un Héro en fonction de l'ID passé en paramètre:");
+		jdbcInstance.getHero(2); // Affiche un Héro en fonction de l'ID passé en paramètre; Méthode getHero.
+		System.out.println("*******************************************************");
+		System.out.println("Cré un nouveau Héro:");
+		jdbcInstance.createHero(); // Crée un nouveau Héro; Méthode createHero.
 		
 
 		WarriorsAPI warriors = new Warriors();

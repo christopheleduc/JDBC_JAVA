@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class JdbcEngine {
 
@@ -18,14 +19,17 @@ public class JdbcEngine {
   private ResultSet rs=null;
   private PreparedStatement ps=null;
   private int idPersonnage = 0;
-  private String namePersonnage;
   private String typePersonnage;
+  private String namePersonnage;
+  private String imagePersonnage = "default.png";
   private int viePersonnage = 0;
   private int attackPersonnage = 0;
   private String armePersonnage;
   private String bouclierPersonnage;
   private String query;
   private ArrayList<String> retourEcran = new ArrayList<String>();
+  private Scanner capture = new Scanner(System.in);
+  private int nombre = 0;
 
     // public static void main(String[] args) { 
            
@@ -60,19 +64,17 @@ public class JdbcEngine {
             System.out.println ("Hero: " + "[ID: " + idPersonnage + " ]" + "[Nom: " + namePersonnage + " ]" + "[Type: " + typePersonnage + " ]" + "[Vie: " + viePersonnage + " ]" + "[Attack: " + attackPersonnage + " ]" + "[Arme: " + armePersonnage + " ]" + "[Bouclier: " + bouclierPersonnage+ " ]" );
             retourEcran.add("Hero: " + "[ID: " + idPersonnage + " ]" + "[Nom: " + namePersonnage + " ]" + "[Type: " + typePersonnage + " ]" + "[Vie: " + viePersonnage + " ]" + "[Attack: " + attackPersonnage + " ]" + "[Arme: " + armePersonnage + " ]" + "[Bouclier: " + bouclierPersonnage+ " ]" );
            }
-
           } catch (Exception e) {
             e.printStackTrace();
           } finally {
             if (connection != null)
               try { /* Close connexion */
                 connection.close();
-        } catch ( SQLException ignore ) {
-          
+              } catch ( SQLException ignore ) {
+            }
+          }
+          return retourEcran; 
         }
-      }
-      return retourEcran; 
-      }
 
       public ArrayList<String> getHero(int Id) {
         
@@ -106,24 +108,115 @@ public class JdbcEngine {
           if (connection != null)
             try { /* Close connexion */
               connection.close();
-      } catch ( SQLException ignore ) {
-        
-      }
-    }
-    return retourEcran; 
+                } catch ( SQLException ignore ) {
+            }
+        }
+        return retourEcran; 
         //return null;
       }
 
-      public String createHero() {
-        return null;
+      public void createHero() {
+                
+      // CONNEXION A LA BASE DE DONNEES  
+	     try{
+        // Inputs pour le Héro.
+        System.out.println("Type (Magicien/Guerrier)? :" );
+        typePersonnage = capture.nextLine();
+
+        System.out.println("Nom ? :" );
+        namePersonnage = capture.nextLine();
+
+        System.out.println("Vie (de 1 à 30)? :" );
+        viePersonnage = capture.nextInt();
+        capture.nextLine();
+
+        System.out.println("Force (de 1 à 30)? :" );
+        attackPersonnage = capture.nextInt();
+        capture.nextLine();
+
+        System.out.println("Arme (Epée/Boule de feu)? :" );
+        armePersonnage = capture.nextLine();
+
+        System.out.println("Bouclier (oui/non)? :" );
+        bouclierPersonnage = capture.nextLine();
+
+        // JDBC.
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        // Connection.
+        connection = DriverManager.getConnection(url, user, passwd);
+        // Prepared requet into String.
+        query = "INSERT INTO hero ( id, type, nom, vie, image, attack, arme, bouclier ) VALUES ( null, ?, ?, ?, ?, ?, ?, ?)";
+        // Prepared statement.
+        ps=connection.prepareStatement(query);
+        // Assignation des paramètres.
+        ps.setString(1, typePersonnage);
+        ps.setString(2, namePersonnage);
+        ps.setInt(3, viePersonnage);
+        ps.setString(4, imagePersonnage);
+        ps.setInt(5, attackPersonnage);
+        ps.setString(6, armePersonnage);
+        ps.setString(7, bouclierPersonnage);
+        // Execute the preparedstatement insert.
+        ps.executeUpdate();
+        //st=connection.createStatement();
+        // rs=st.executeQuery("SELECT id, type, nom, vie, attack, arme, bouclier from hero where id = ?");
+        //rs.getInt(1, Id); 
+
+        } catch (Exception e) {
+          e.printStackTrace();
+        } finally {
+          if (connection != null)
+            try { /* Close connexion */
+              connection.close();
+            } catch ( SQLException ignore ) {
+          }
+        }
       }
 
       public String updateHero() {
         return null;
       }
 
-      public String deleteHero(String id) {
-        return null;
+      public void deleteHero() {
+                        
+      // CONNEXION A LA BASE DE DONNEES  
+	     try{
+        // Inputs pour le Héro.
+        System.out.println("Quel Héro voulez-vous supprimer (de  1 à " + nombre + " 30)? :" );
+        attackPersonnage = capture.nextInt();
+        capture.nextLine();
+
+        // JDBC.
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        // Connection.
+        connection = DriverManager.getConnection(url, user, passwd);
+        // Prepared requet into String.
+        query = "INSERT INTO hero ( id, type, nom, vie, image, attack, arme, bouclier ) VALUES ( null, ?, ?, ?, ?, ?, ?, ?)";
+        // Prepared statement.
+        ps=connection.prepareStatement(query);
+        // Assignation des paramètres.
+        ps.setString(1, typePersonnage);
+        ps.setString(2, namePersonnage);
+        ps.setInt(3, viePersonnage);
+        ps.setString(4, imagePersonnage);
+        ps.setInt(5, attackPersonnage);
+        ps.setString(6, armePersonnage);
+        ps.setString(7, bouclierPersonnage);
+        // Execute the preparedstatement insert.
+        ps.executeUpdate();
+        //st=connection.createStatement();
+        // rs=st.executeQuery("SELECT id, type, nom, vie, attack, arme, bouclier from hero where id = ?");
+        //rs.getInt(1, Id); 
+
+        } catch (Exception e) {
+          e.printStackTrace();
+        } finally {
+          if (connection != null)
+            try { /* Close connexion */
+              connection.close();
+            } catch ( SQLException ignore ) {
+          }
+        }
       }
     
 }
