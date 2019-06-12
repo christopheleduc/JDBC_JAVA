@@ -1,5 +1,6 @@
 package warriors.client.console;
 
+import java.util.ArrayList;
 //import java.io.File;
 //import java.io.FileNotFoundException;
 //import java.util.ArrayList;
@@ -11,7 +12,10 @@ import warriors.contracts.GameStatus;
 import warriors.contracts.Hero;
 import warriors.contracts.Map;
 import warriors.contracts.WarriorsAPI;
+import warriors.engine.JdbcEngine;
 import warriors.engine.Warriors;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 public class ClientConsole {
 	
@@ -20,6 +24,27 @@ public class ClientConsole {
 
 	public static void main(String[] args) {
 				
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("Driver O.K.");
+	  
+			String url = "jdbc:mysql://localhost:3306/java_jdbc_01?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
+			String user = "jdbc_java";
+			String passwd = "sasdipas";
+	  
+			Connection conn = DriverManager.getConnection(url, user, passwd);
+			System.out.println("Connexion effective !");         
+			   
+		  } catch (Exception e) {
+			e.printStackTrace();
+		  } 
+		ArrayList<String> listDeHeros = new ArrayList<>();
+
+		JdbcEngine jdbcInstance = new JdbcEngine();
+		listDeHeros = jdbcInstance.getHeroes();
+		//System.out.println(listDeHeros);
+		
+
 		WarriorsAPI warriors = new Warriors();
 		Scanner sc = new Scanner(System.in);
 		String menuChoice = "";
@@ -30,7 +55,7 @@ public class ClientConsole {
 			}			
 		}while(!menuChoice.equals(MENU_QUITTER));
 		sc.close();
-		System.out.println("Ã  bientÃ´t");
+		System.out.println("à bientôt");
 	}
 
 	private static void startGame(WarriorsAPI warriors, Scanner sc) {
@@ -38,7 +63,7 @@ public class ClientConsole {
 		System.out.println("Entrez votre nom:");
 		String playerName = sc.nextLine();
 		
-		System.out.println("Choisissez votre hÃ©ro:");
+		System.out.println("Choisissez votre héro:");
 		for(int i = 0; i < warriors.getHeroes().size(); i++) {
 			Hero heroe = warriors.getHeroes().get(i);
 			System.out.println(i+1 + " - " + heroe.getName());
@@ -58,7 +83,7 @@ public class ClientConsole {
 		String gameId = gameState.getGameId();
 		while (gameState.getGameStatus() == GameStatus.IN_PROGRESS) {
 			System.out.println(gameState.getLastLog());
-			System.out.println("\nAppuyer sur une touche pour lancer le dÃ©"); 
+			System.out.println("\nAppuyer sur une touche pour lancer le dé"); 
 			if(sc.hasNext()) {
 				sc.nextLine();
 				gameState = warriors.nextTurn(gameId);

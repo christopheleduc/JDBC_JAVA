@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - JdbcEngine",
+            "request": "launch",
+            "mainClass": "warriors.engine.JdbcEngine",
+            "projectName": "Java_Warriors"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "console": "integratedTerminal",
