@@ -13,16 +13,18 @@ public class JdbcEngine {
   private final String url = "jdbc:mysql://localhost:3306/java_jdbc_01?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
   private final String user = "jdbc_java";
   private final String passwd = "sasdipas";
-  Connection connection=null;	
-  Statement st=null;
-  ResultSet rs=null;
-  int idPersonnage = 0;
-  String namePersonnage;
-  String typePersonnage;
-  int viePersonnage = 0;
-  int attackPersonnage = 0;
-  String armePersonnage;
-  String bouclierPersonnage;
+  private Connection connection=null;	
+  private Statement st=null;
+  private ResultSet rs=null;
+  private PreparedStatement ps=null;
+  private int idPersonnage = 0;
+  private String namePersonnage;
+  private String typePersonnage;
+  private int viePersonnage = 0;
+  private int attackPersonnage = 0;
+  private String armePersonnage;
+  private String bouclierPersonnage;
+  private String query;
   private ArrayList<String> retourEcran = new ArrayList<String>();
 
     // public static void main(String[] args) { 
@@ -79,8 +81,8 @@ public class JdbcEngine {
         Class.forName("com.mysql.cj.jdbc.Driver");
         connection = DriverManager.getConnection(url, user, passwd);
         //prepared statement
-        String query = "SELECT id, type, nom, vie, attack, arme, bouclier from hero where id = ?";
-        PreparedStatement ps=connection.prepareStatement(query);
+        query = "SELECT id, type, nom, vie, attack, arme, bouclier from hero where id = ?";
+        ps=connection.prepareStatement(query);
         ps.setInt(1, Id);
         rs = ps.executeQuery();
         //st=connection.createStatement();
@@ -108,8 +110,8 @@ public class JdbcEngine {
         
       }
     }
-    //return retourEcran; 
-        return null;
+    return retourEcran; 
+        //return null;
       }
 
       public String createHero() {
