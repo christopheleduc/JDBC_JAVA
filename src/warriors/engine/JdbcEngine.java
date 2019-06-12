@@ -181,32 +181,29 @@ public class JdbcEngine {
                         
       // CONNEXION A LA BASE DE DONNEES  
 	     try{
-        // Inputs pour le Héro.
-        System.out.println("Quel Héro voulez-vous supprimer (de  1 à " + nombre + " 30)? :" );
-        attackPersonnage = capture.nextInt();
-        capture.nextLine();
 
         // JDBC.
         Class.forName("com.mysql.cj.jdbc.Driver");
         // Connection.
         connection = DriverManager.getConnection(url, user, passwd);
         // Prepared requet into String.
-        query = "INSERT INTO hero ( id, type, nom, vie, image, attack, arme, bouclier ) VALUES ( null, ?, ?, ?, ?, ?, ?, ?)";
+        query = "SELECT id from hero ORDER BY id DESC LIMIT 1";
         // Prepared statement.
         ps=connection.prepareStatement(query);
-        // Assignation des paramètres.
-        ps.setString(1, typePersonnage);
-        ps.setString(2, namePersonnage);
-        ps.setInt(3, viePersonnage);
-        ps.setString(4, imagePersonnage);
-        ps.setInt(5, attackPersonnage);
-        ps.setString(6, armePersonnage);
-        ps.setString(7, bouclierPersonnage);
+        // Execute the preparedstatement insert.
+        rs = ps.executeQuery();
+        rs.next(); 	
+        idPersonnage = rs.getInt("id");
+        // Inputs pour le Héro.
+        System.out.println("Quel Héro voulez-vous supprimer (de  1 à " + idPersonnage + ")? :" );
+        nombre = capture.nextInt();
+        capture.nextLine();
+        // Prepared requet into String.
+        query = "DELETE from hero where id = ?";
+        ps=connection.prepareStatement(query);
+        ps.setInt(1, nombre);
         // Execute the preparedstatement insert.
         ps.executeUpdate();
-        //st=connection.createStatement();
-        // rs=st.executeQuery("SELECT id, type, nom, vie, attack, arme, bouclier from hero where id = ?");
-        //rs.getInt(1, Id); 
 
         } catch (Exception e) {
           e.printStackTrace();

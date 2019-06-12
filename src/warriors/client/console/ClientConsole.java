@@ -49,8 +49,12 @@ public class ClientConsole {
 		System.out.println("Affiche un Héro en fonction de l'ID passé en paramètre:");
 		jdbcInstance.getHero(2); // Affiche un Héro en fonction de l'ID passé en paramètre; Méthode getHero.
 		System.out.println("*******************************************************");
-		System.out.println("Cré un nouveau Héro:");
+		System.out.println("Crée un nouveau Héro:");
 		jdbcInstance.createHero(); // Crée un nouveau Héro; Méthode createHero.
+		
+		System.out.println("*******************************************************");
+		System.out.println("Supprime un Héro selon son ID:");
+		jdbcInstance.deleteHero(); // Supprime un Héro selon son ID; Méthode deleteHero.
 		
 
 		WarriorsAPI warriors = new Warriors();
@@ -63,7 +67,7 @@ public class ClientConsole {
 			}			
 		}while(!menuChoice.equals(MENU_QUITTER));
 		sc.close();
-		System.out.println("à bientôt");
+		System.out.println("A bientôt");
 	}
 
 	private static void startGame(WarriorsAPI warriors, Scanner sc) {
