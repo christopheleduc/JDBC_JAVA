@@ -1,5 +1,7 @@
 package warriors.client.console;
 
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.util.ArrayList;
 //import java.io.File;
 //import java.io.FileNotFoundException;
@@ -23,6 +25,15 @@ public class ClientConsole {
 	private static String MENU_QUITTER = "2";
 
 	public static void main(String[] args) {
+
+		
+        ClassLoader cl = ClassLoader.getSystemClassLoader();
+
+        URL[] urls = ((URLClassLoader)cl).getURLs();
+
+        for(URL url: urls){
+        	System.out.println(url.getFile());
+        }
 				
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -42,20 +53,20 @@ public class ClientConsole {
 
 		JdbcEngine jdbcInstance = new JdbcEngine(); // Instancie JdbcEngine.
 		System.out.println("*******************************************************");
-		System.out.println("Affiche la liste des Héros:");
+		System.out.println("Affiche la liste des Heros:");
 		listDeHeros = jdbcInstance.getHeroes(); // Affiche la liste des Héros; Méthode getHeroes.
 		//System.out.println(listDeHeros);
 		System.out.println("*******************************************************");
-		System.out.println("Affiche un Héro en fonction de l'ID passé en paramètre:");
-		jdbcInstance.getHero(2); // Affiche un Héro en fonction de l'ID passé en paramètre; Méthode getHero.
+		System.out.println("Affiche un Hero en fonction de l'ID passï¿½ en paramï¿½tre:");
+		jdbcInstance.getHero(8); // Affiche un Héro en fonction de l'ID passé en paramètre; Méthode getHero.
 		System.out.println("*******************************************************");
-		System.out.println("Crée un nouveau Héro:");
+		System.out.println("Cree un nouveau Héro:");
 		//jdbcInstance.createHero(); // Crée un nouveau Héro; Méthode createHero.
 		System.out.println("*******************************************************");
-		System.out.println("Renome un Héro:");
-		jdbcInstance.updateHero(); // Renome un Héro; Méthode updateteHero.
+		System.out.println("Renome un Hero:");
+		//jdbcInstance.updateHero(); // Renome un Héro; Méthode updateteHero.
 		System.out.println("*******************************************************");
-		System.out.println("Supprime un Héro selon son ID:");
+		System.out.println("Supprime un Hero selon son ID:");
 		//jdbcInstance.deleteHero(); // Supprime un Héro selon son ID; Méthode deleteHero.
 		
 
