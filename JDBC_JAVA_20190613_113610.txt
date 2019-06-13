@@ -1,0 +1,10 @@
+ERROR - 11:36:10: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:36:10: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:36:51: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:36:51: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:37:05: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:37:05: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:37:19: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:37:19: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:37:23: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.
+ERROR - 11:37:23: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Octet 2 de la séquence UTF-8 à 2 octets non valide.

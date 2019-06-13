@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3fb99ec3-dc98-4070-aa1d-8ebcb6c4de27" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/warriors/client/console/ClientConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/warriors/client/console/ClientConsole.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Warriors.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/Warriors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/warriors.engine.Game" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/warriors.engine.Game">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>warriors.engine.Game</OriginalElement>
+              <nodes>
+                <node x="261.946315979103" y="0.0">warriors.contracts.GameStatus</node>
+                <node x="0.0" y="709.0">warriors.engine.Personnage</node>
+                <node x="630.2375247703118" y="308.0">warriors.contracts.WarriorsAPI</node>
+                <node x="456.7375247703118" y="0.0">warriors.contracts.Hero</node>
+                <node x="387.72221972017064" y="308.0">warriors.engine.Game</node>
+                <node x="10.0" y="788.0">warriors.engine.Guerrier</node>
+                <node x="583.7375247703118" y="0.0">warriors.contracts.Map</node>
+                <node x="404.61533207229934" y="536.0">warriors.engine.Warriors</node>
+                <node x="155.0" y="709.0">warriors.engine.TimeStamp</node>
+                <node x="722.3208581036452" y="209.0">warriors.engine.Maps</node>
+                <node x="164.7222197201707" y="308.0">warriors.engine.Heros</node>
+                <node x="265.41020386717116" y="397.0">warriors.engine.SpecialCases</node>
+                <node x="0.0" y="536.0">warriors.engine.JdbcEngine</node>
+                <node x="548.9486654056327" y="635.0">warriors.client.console.ClientConsole</node>
+                <node x="504.2375247703118" y="209.0">warriors.contracts.GameState</node>
+                <node x="264.72221972017064" y="308.0">warriors.contracts.GameItem</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="warriors.engine.Game" target="warriors.contracts.Map">
+                  <point x="11.285714285714278" y="-14.5" />
+                  <point x="438.5079340058849" y="258.0" />
+                  <point x="451.7936482915992" y="258.0" />
+                  <point x="451.7936482915992" y="169.0" />
+                  <point x="588.8803819131689" y="169.0" />
+                  <point x="-30.85714285714289" y="14.5" />
+                </edge>
+                <edge source="warriors.contracts.GameState" target="warriors.contracts.Hero">
+                  <point x="0.0" y="-14.5" />
+                  <point x="556.7375247703118" y="99.0" />
+                  <point x="504.30895334174033" y="99.0" />
+                  <point x="10.571428571428555" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Guerrier" target="warriors.engine.Personnage">
+                  <point x="-22.5" y="-14.5" />
+                  <point x="32.5" y="763.0" />
+                  <point x="27.5" y="763.0" />
+                  <point x="-27.5" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.engine.SpecialCases">
+                  <point x="-28.30769230769232" y="-14.5" />
+                  <point x="422.307639764607" y="496.0" />
+                  <point x="284.57687053383785" y="496.0" />
+                  <point x="-38.33333333333334" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.SpecialCases" target="warriors.engine.Warriors">
+                  <point x="38.33333333333334" y="14.5" />
+                  <point x="361.24353720050453" y="476.0" />
+                  <point x="436.4614859184532" y="476.0" />
+                  <point x="-14.153846153846132" y="-14.5" />
+                </edge>
+                <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.Hero">
+                  <point x="0.0" y="-14.5" />
+                  <point x="685.2375247703118" y="288.0" />
+                  <point x="698.0708581036452" y="288.0" />
+                  <point x="698.0708581036452" y="89.0" />
+                  <point x="514.8803819131689" y="89.0" />
+                  <point x="21.14285714285711" y="14.5" />
+                </edge>
+                <edge source="warriors.client.console.ClientConsole" target="warriors.engine.JdbcEngine">
+                  <point x="-53.375" y="-14.5" />
+                  <point x="556.5736654056327" y="615.0" />
+                  <point x="27.0" y="615.0" />
+                  <point x="-27.0" y="14.5" />
+                </edge>
+                <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.GameState">
+                  <point x="22.875" y="-14.5" />
+                  <point x="632.8236654056327" y="595.0" />
+                  <point x="790.8208581036452" y="595.0" />
+                  <point x="790.8208581036452" y="278.0" />
+                  <point x="600.4875247703118" y="278.0" />
+                  <point x="43.75" y="14.5" />
+                </edge>
+                <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.WarriorsAPI">
+                  <point x="7.625" y="-14.5" />
+                  <point x="617.5736654056327" y="585.0" />
+                  <point x="779.8208581036452" y="585.0" />
+                  <point x="779.8208581036452" y="377.0" />
+                  <point x="712.7375247703118" y="377.0" />
+                  <point x="27.5" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.SpecialCases" target="warriors.engine.Heros">
+                  <point x="-46.0" y="-14.5" />
+                  <point x="276.91020386717116" y="377.0" />
+                  <point x="223.9722197201707" y="377.0" />
+                  <point x="19.75" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Game" target="warriors.contracts.GameStatus">
+                  <point x="-33.85714285714283" y="-14.5" />
+                  <point x="393.3650768630278" y="288.0" />
+                  <point x="369.7857142857142" y="288.0" />
+                  <point x="369.7857142857142" y="129.0" />
+                  <point x="326.696315979103" y="129.0" />
+                  <point x="9.25" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Game" target="warriors.contracts.GameState">
+                  <point x="33.85714285714289" y="-14.5" />
+                  <point x="461.07936257731353" y="278.0" />
+                  <point x="512.9875247703118" y="278.0" />
+                  <point x="-43.75" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameStatus">
+                  <point x="-23.0" y="-14.5" />
+                  <point x="299.91020386717116" y="367.0" />
+                  <point x="254.22221972017067" y="367.0" />
+                  <point x="254.22221972017067" y="129.0" />
+                  <point x="308.196315979103" y="129.0" />
+                  <point x="-9.25" y="14.5" />
+                </edge>
+                <edge source="warriors.contracts.GameState" target="warriors.contracts.Map">
+                  <point x="35.0" y="-14.5" />
+                  <point x="591.7375247703118" y="189.0" />
+                  <point x="609.4518104845976" y="189.0" />
+                  <point x="-10.285714285714278" y="14.5" />
+                </edge>
+                <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.Hero">
+                  <point x="38.125" y="-14.5" />
+                  <point x="648.0736654056327" y="605.0" />
+                  <point x="809.8208581036452" y="605.0" />
+                  <point x="809.8208581036452" y="59.0" />
+                  <point x="525.4518104845976" y="59.0" />
+                  <point x="31.714285714285722" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameState">
+                  <point x="46.0" y="-14.5" />
+                  <point x="368.91020386717116" y="377.0" />
+                  <point x="477.22221972017064" y="377.0" />
+                  <point x="477.22221972017064" y="288.0" />
+                  <point x="530.4875247703118" y="288.0" />
+                  <point x="-26.25" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Game" target="warriors.contracts.Hero">
+                  <point x="-11.285714285714278" y="-14.5" />
+                  <point x="415.93650543445636" y="268.0" />
+                  <point x="391.7857142857142" y="268.0" />
+                  <point x="391.7857142857142" y="149.0" />
+                  <point x="472.59466762745467" y="149.0" />
+                  <point x="-21.142857142857167" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.SpecialCases" target="warriors.engine.Game">
+                  <point x="23.0" y="-14.5" />
+                  <point x="345.91020386717116" y="367.0" />
+                  <point x="400.8888863868373" y="367.0" />
+                  <point x="-26.333333333333314" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.engine.Maps">
+                  <point x="42.46153846153845" y="-14.5" />
+                  <point x="493.0768705338378" y="516.0" />
+                  <point x="760.8208581036452" y="516.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.Map">
+                  <point x="53.375" y="-14.5" />
+                  <point x="663.3236654056327" y="615.0" />
+                  <point x="829.5708055605598" y="615.0" />
+                  <point x="829.5708055605598" y="49.0" />
+                  <point x="650.5946676274547" y="49.0" />
+                  <point x="30.85714285714289" y="14.5" />
+                </edge>
+                <edge source="warriors.contracts.GameState" target="warriors.contracts.GameStatus">
+                  <point x="-35.0" y="-14.5" />
+                  <point x="521.7375247703118" y="109.0" />
+                  <point x="363.696315979103" y="109.0" />
+                  <point x="46.25" y="14.5" />
+                </edge>
+                <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.GameState">
+                  <point x="-36.66666666666663" y="-14.5" />
+                  <point x="648.5708581036452" y="288.0" />
+                  <point x="582.9875247703118" y="288.0" />
+                  <point x="26.25" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Maps" target="warriors.contracts.Map">
+                  <point x="0.0" y="-14.5" />
+                  <point x="760.8208581036452" y="69.0" />
+                  <point x="640.3089533417403" y="69.0" />
+                  <point x="20.571428571428555" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Heros" target="warriors.contracts.Hero">
+                  <point x="0.0" y="-14.5" />
+                  <point x="204.2222197201707" y="139.0" />
+                  <point x="462.0232390560261" y="139.0" />
+                  <point x="-31.714285714285722" y="14.5" />
+                </edge>
+                <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.Map">
+                  <point x="36.66666666666663" y="-14.5" />
+                  <point x="721.9041914369784" y="288.0" />
+                  <point x="709.0708581036452" y="288.0" />
+                  <point x="709.0708581036452" y="79.0" />
+                  <point x="630.0232390560261" y="79.0" />
+                  <point x="10.285714285714278" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.contracts.GameStatus">
+                  <point x="-42.46153846153845" y="-14.5" />
+                  <point x="408.1537936107609" y="516.0" />
+                  <point x="129.5" y="516.0" />
+                  <point x="129.5" y="119.0" />
+                  <point x="289.696315979103" y="119.0" />
+                  <point x="-27.75" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.contracts.WarriorsAPI">
+                  <point x="35.38461538461536" y="-14.5" />
+                  <point x="485.9999474569147" y="506.0" />
+                  <point x="657.7375247703118" y="506.0" />
+                  <point x="-27.5" y="14.5" />
+                </edge>
+                <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.GameStatus">
+                  <point x="-22.875" y="-14.5" />
+                  <point x="587.0736654056327" y="595.0" />
+                  <point x="118.5" y="595.0" />
+                  <point x="118.5" y="109.0" />
+                  <point x="271.196315979103" y="109.0" />
+                  <point x="-46.25" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.engine.Heros">
+                  <point x="-35.38461538461536" y="-14.5" />
+                  <point x="415.230716687684" y="506.0" />
+                  <point x="184.4722197201707" y="506.0" />
+                  <point x="-19.75" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.contracts.GameState">
+                  <point x="14.153846153846132" y="-14.5" />
+                  <point x="464.76917822614547" y="476.0" />
+                  <point x="553.1990632318502" y="476.0" />
+                  <point x="553.1990632318502" y="288.0" />
+                  <point x="547.9875247703118" y="288.0" />
+                  <point x="-8.75" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.contracts.Hero">
+                  <point x="7.076923076923094" y="-14.5" />
+                  <point x="457.69225514922243" y="466.0" />
+                  <point x="493.7375247703118" y="466.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.engine.Game">
+                  <point x="0.0" y="-14.5" />
+                  <point x="450.61533207229934" y="456.0" />
+                  <point x="458.647728637483" y="456.0" />
+                  <point x="458.647728637483" y="357.0" />
+                  <point x="453.55555305350396" y="357.0" />
+                  <point x="26.333333333333314" y="14.5" />
+                </edge>
+                <edge source="warriors.client.console.ClientConsole" target="warriors.engine.Warriors">
+                  <point x="-7.625" y="-14.5" />
+                  <point x="602.3236654056327" y="585.0" />
+                  <point x="450.61533207229934" y="585.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameItem">
+                  <point x="0.0" y="-14.5" />
+                  <point x="322.91020386717116" y="377.0" />
+                  <point x="316.22221972017064" y="377.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="warriors.engine.Warriors" target="warriors.contracts.Map">
+                  <point x="28.30769230769232" y="-14.5" />
+                  <point x="478.92302437999166" y="496.0" />
+                  <point x="619.7375247703118" y="496.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="52.5" y="332.5" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeStamp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/TimeStamp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpecialCases.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/SpecialCases.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Maps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/Maps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Personnage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/Personnage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcEngine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/JdbcEngine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Heros.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/Heros.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Guerrier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/Guerrier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warriors/engine/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/warriors/client/console/ClientConsole.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JDBC_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC_JAVA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="warriors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="warriors" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="warriors" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDBC_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDBC_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="warriors" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fb99ec3-dc98-4070-aa1d-8ebcb6c4de27" name="Default" comment="" />
+      <created>1560419010574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560419010574</updated>
+      <workItem from="1560419013872" duration="2343000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2343000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/warriors/contracts/GameItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/contracts/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/contracts/GameStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/contracts/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/contracts/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/contracts/WarriorsAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="64.0" y="91.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.contracts">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.contracts</OriginalElement>
+          <nodes>
+            <node x="" y="">warriors.contracts.GameStatus</node>
+            <node x="" y="">warriors.contracts.Hero</node>
+            <node x="" y="">warriors.contracts.WarriorsAPI</node>
+            <node x="" y="">warriors.contracts.Map</node>
+            <node x="" y="">warriors.contracts.GameState</node>
+            <node x="" y="">warriors.contracts.GameItem</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="126.5" y="125.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.contracts.GameStatus">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.contracts.GameStatus</OriginalElement>
+          <nodes>
+            <node x="" y="">warriors.contracts.GameStatus</node>
+            <node x="" y="">java.lang.Enum</node>
+            <node x="" y="">java.lang.Comparable</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="119.5" y="93.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.contracts.GameState">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.contracts.GameState</OriginalElement>
+          <nodes>
+            <node x="" y="">warriors.contracts.GameState</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="52.5" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.contracts.GameItem">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.contracts.GameItem</OriginalElement>
+          <nodes>
+            <node x="" y="">java.lang.Enum</node>
+            <node x="" y="">java.lang.Comparable</node>
+            <node x="" y="">warriors.contracts.GameItem</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="119.5" y="93.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.client.console.ClientConsole">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.client.console.ClientConsole</OriginalElement>
+          <nodes>
+            <node x="" y="">warriors.client.console.ClientConsole</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="61.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/client/console/ClientConsole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="112" column="30" lean-forward="true" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.Warriors">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.Warriors</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">warriors.contracts.WarriorsAPI</node>
+            <node x="9.0" y="79.0">warriors.engine.Warriors</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="warriors.engine.Warriors" target="warriors.contracts.WarriorsAPI">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-492.0" y="-150.5" />
+          <SelectedNodes>
+            <node>warriors.engine.Warriors</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.SpecialCases">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.SpecialCases</OriginalElement>
+          <nodes>
+            <node x="0.0" y="158.0">warriors.engine.SpecialCases</node>
+            <node x="2.5" y="0.0">warriors.contracts.WarriorsAPI</node>
+            <node x="11.5" y="79.0">warriors.engine.Warriors</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="warriors.engine.Warriors" target="warriors.contracts.WarriorsAPI">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.SpecialCases" target="warriors.engine.Warriors">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-489.5" y="-111.0" />
+          <SelectedNodes>
+            <node>warriors.engine.SpecialCases</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.Personnage">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.Personnage</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">warriors.engine.Personnage</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-492.0" y="-190.0" />
+          <SelectedNodes>
+            <node>warriors.engine.Personnage</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.Maps">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.Maps</OriginalElement>
+          <nodes>
+            <node x="2.5" y="0.0">warriors.contracts.Map</node>
+            <node x="0.0" y="79.0">warriors.engine.Maps</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="warriors.engine.Maps" target="warriors.contracts.Map">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-508.5" y="-150.5" />
+          <SelectedNodes>
+            <node>warriors.engine.Maps</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.JdbcEngine">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.JdbcEngine</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">warriors.engine.JdbcEngine</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-493.0" y="-190.0" />
+          <SelectedNodes>
+            <node>warriors.engine.JdbcEngine</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.Heros">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.Heros</OriginalElement>
+          <nodes>
+            <node x="2.5" y="0.0">warriors.contracts.Hero</node>
+            <node x="0.0" y="79.0">warriors.engine.Heros</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="warriors.engine.Heros" target="warriors.contracts.Hero">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-507.5" y="-150.5" />
+          <SelectedNodes>
+            <node>warriors.engine.Heros</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.Guerrier">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.Guerrier</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">warriors.engine.Personnage</node>
+            <node x="10.0" y="79.0">warriors.engine.Guerrier</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="warriors.engine.Guerrier" target="warriors.engine.Personnage">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-492.0" y="-150.5" />
+          <SelectedNodes>
+            <node>warriors.engine.Personnage</node>
+            <node>warriors.engine.Guerrier</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.TimeStamp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.TimeStamp</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">warriors.engine.TimeStamp</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-492.5" y="-190.0" />
+          <SelectedNodes>
+            <node>warriors.engine.TimeStamp</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/Guerrier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/Heros.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/JdbcEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/Maps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/Personnage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/SpecialCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/TimeStamp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warriors/engine/Warriors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/warriors.engine.Game">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>warriors.engine.Game</OriginalElement>
+          <nodes>
+            <node x="261.946315979103" y="0.0">warriors.contracts.GameStatus</node>
+            <node x="0.0" y="709.0">warriors.engine.Personnage</node>
+            <node x="630.2375247703118" y="308.0">warriors.contracts.WarriorsAPI</node>
+            <node x="456.7375247703118" y="0.0">warriors.contracts.Hero</node>
+            <node x="387.72221972017064" y="308.0">warriors.engine.Game</node>
+            <node x="10.0" y="788.0">warriors.engine.Guerrier</node>
+            <node x="583.7375247703118" y="0.0">warriors.contracts.Map</node>
+            <node x="404.61533207229934" y="536.0">warriors.engine.Warriors</node>
+            <node x="155.0" y="709.0">warriors.engine.TimeStamp</node>
+            <node x="722.3208581036452" y="209.0">warriors.engine.Maps</node>
+            <node x="164.7222197201707" y="308.0">warriors.engine.Heros</node>
+            <node x="265.41020386717116" y="397.0">warriors.engine.SpecialCases</node>
+            <node x="0.0" y="536.0">warriors.engine.JdbcEngine</node>
+            <node x="548.9486654056327" y="635.0">warriors.client.console.ClientConsole</node>
+            <node x="504.2375247703118" y="209.0">warriors.contracts.GameState</node>
+            <node x="264.72221972017064" y="308.0">warriors.contracts.GameItem</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="warriors.engine.Game" target="warriors.contracts.Map">
+              <point x="11.285714285714278" y="-14.5" />
+              <point x="438.5079340058849" y="258.0" />
+              <point x="451.7936482915992" y="258.0" />
+              <point x="451.7936482915992" y="169.0" />
+              <point x="588.8803819131689" y="169.0" />
+              <point x="-30.85714285714289" y="14.5" />
+            </edge>
+            <edge source="warriors.contracts.GameState" target="warriors.contracts.Hero">
+              <point x="0.0" y="-14.5" />
+              <point x="556.7375247703118" y="99.0" />
+              <point x="504.30895334174033" y="99.0" />
+              <point x="10.571428571428555" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Guerrier" target="warriors.engine.Personnage">
+              <point x="-22.5" y="-14.5" />
+              <point x="32.5" y="763.0" />
+              <point x="27.5" y="763.0" />
+              <point x="-27.5" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.engine.SpecialCases">
+              <point x="-28.30769230769232" y="-14.5" />
+              <point x="422.307639764607" y="496.0" />
+              <point x="284.57687053383785" y="496.0" />
+              <point x="-38.33333333333334" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.SpecialCases" target="warriors.engine.Warriors">
+              <point x="38.33333333333334" y="14.5" />
+              <point x="361.24353720050453" y="476.0" />
+              <point x="436.4614859184532" y="476.0" />
+              <point x="-14.153846153846132" y="-14.5" />
+            </edge>
+            <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.Hero">
+              <point x="0.0" y="-14.5" />
+              <point x="685.2375247703118" y="288.0" />
+              <point x="698.0708581036452" y="288.0" />
+              <point x="698.0708581036452" y="89.0" />
+              <point x="514.8803819131689" y="89.0" />
+              <point x="21.14285714285711" y="14.5" />
+            </edge>
+            <edge source="warriors.client.console.ClientConsole" target="warriors.engine.JdbcEngine">
+              <point x="-53.375" y="-14.5" />
+              <point x="556.5736654056327" y="615.0" />
+              <point x="27.0" y="615.0" />
+              <point x="-27.0" y="14.5" />
+            </edge>
+            <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.GameState">
+              <point x="22.875" y="-14.5" />
+              <point x="632.8236654056327" y="595.0" />
+              <point x="790.8208581036452" y="595.0" />
+              <point x="790.8208581036452" y="278.0" />
+              <point x="600.4875247703118" y="278.0" />
+              <point x="43.75" y="14.5" />
+            </edge>
+            <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.WarriorsAPI">
+              <point x="7.625" y="-14.5" />
+              <point x="617.5736654056327" y="585.0" />
+              <point x="779.8208581036452" y="585.0" />
+              <point x="779.8208581036452" y="377.0" />
+              <point x="712.7375247703118" y="377.0" />
+              <point x="27.5" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.SpecialCases" target="warriors.engine.Heros">
+              <point x="-46.0" y="-14.5" />
+              <point x="276.91020386717116" y="377.0" />
+              <point x="223.9722197201707" y="377.0" />
+              <point x="19.75" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Game" target="warriors.contracts.GameStatus">
+              <point x="-33.85714285714283" y="-14.5" />
+              <point x="393.3650768630278" y="288.0" />
+              <point x="369.7857142857142" y="288.0" />
+              <point x="369.7857142857142" y="129.0" />
+              <point x="326.696315979103" y="129.0" />
+              <point x="9.25" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Game" target="warriors.contracts.GameState">
+              <point x="33.85714285714289" y="-14.5" />
+              <point x="461.07936257731353" y="278.0" />
+              <point x="512.9875247703118" y="278.0" />
+              <point x="-43.75" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameStatus">
+              <point x="-23.0" y="-14.5" />
+              <point x="299.91020386717116" y="367.0" />
+              <point x="254.22221972017067" y="367.0" />
+              <point x="254.22221972017067" y="129.0" />
+              <point x="308.196315979103" y="129.0" />
+              <point x="-9.25" y="14.5" />
+            </edge>
+            <edge source="warriors.contracts.GameState" target="warriors.contracts.Map">
+              <point x="35.0" y="-14.5" />
+              <point x="591.7375247703118" y="189.0" />
+              <point x="609.4518104845976" y="189.0" />
+              <point x="-10.285714285714278" y="14.5" />
+            </edge>
+            <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.Hero">
+              <point x="38.125" y="-14.5" />
+              <point x="648.0736654056327" y="605.0" />
+              <point x="809.8208581036452" y="605.0" />
+              <point x="809.8208581036452" y="59.0" />
+              <point x="525.4518104845976" y="59.0" />
+              <point x="31.714285714285722" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameState">
+              <point x="46.0" y="-14.5" />
+              <point x="368.91020386717116" y="377.0" />
+              <point x="477.22221972017064" y="377.0" />
+              <point x="477.22221972017064" y="288.0" />
+              <point x="530.4875247703118" y="288.0" />
+              <point x="-26.25" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Game" target="warriors.contracts.Hero">
+              <point x="-11.285714285714278" y="-14.5" />
+              <point x="415.93650543445636" y="268.0" />
+              <point x="391.7857142857142" y="268.0" />
+              <point x="391.7857142857142" y="149.0" />
+              <point x="472.59466762745467" y="149.0" />
+              <point x="-21.142857142857167" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.SpecialCases" target="warriors.engine.Game">
+              <point x="23.0" y="-14.5" />
+              <point x="345.91020386717116" y="367.0" />
+              <point x="400.8888863868373" y="367.0" />
+              <point x="-26.333333333333314" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.engine.Maps">
+              <point x="42.46153846153845" y="-14.5" />
+              <point x="493.0768705338378" y="516.0" />
+              <point x="760.8208581036452" y="516.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.Map">
+              <point x="53.375" y="-14.5" />
+              <point x="663.3236654056327" y="615.0" />
+              <point x="829.5708055605598" y="615.0" />
+              <point x="829.5708055605598" y="49.0" />
+              <point x="650.5946676274547" y="49.0" />
+              <point x="30.85714285714289" y="14.5" />
+            </edge>
+            <edge source="warriors.contracts.GameState" target="warriors.contracts.GameStatus">
+              <point x="-35.0" y="-14.5" />
+              <point x="521.7375247703118" y="109.0" />
+              <point x="363.696315979103" y="109.0" />
+              <point x="46.25" y="14.5" />
+            </edge>
+            <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.GameState">
+              <point x="-36.66666666666663" y="-14.5" />
+              <point x="648.5708581036452" y="288.0" />
+              <point x="582.9875247703118" y="288.0" />
+              <point x="26.25" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Maps" target="warriors.contracts.Map">
+              <point x="0.0" y="-14.5" />
+              <point x="760.8208581036452" y="69.0" />
+              <point x="640.3089533417403" y="69.0" />
+              <point x="20.571428571428555" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Heros" target="warriors.contracts.Hero">
+              <point x="0.0" y="-14.5" />
+              <point x="204.2222197201707" y="139.0" />
+              <point x="462.0232390560261" y="139.0" />
+              <point x="-31.714285714285722" y="14.5" />
+            </edge>
+            <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.Map">
+              <point x="36.66666666666663" y="-14.5" />
+              <point x="721.9041914369784" y="288.0" />
+              <point x="709.0708581036452" y="288.0" />
+              <point x="709.0708581036452" y="79.0" />
+              <point x="630.0232390560261" y="79.0" />
+              <point x="10.285714285714278" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.contracts.GameStatus">
+              <point x="-42.46153846153845" y="-14.5" />
+              <point x="408.1537936107609" y="516.0" />
+              <point x="129.5" y="516.0" />
+              <point x="129.5" y="119.0" />
+              <point x="289.696315979103" y="119.0" />
+              <point x="-27.75" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.contracts.WarriorsAPI">
+              <point x="35.38461538461536" y="-14.5" />
+              <point x="485.9999474569147" y="506.0" />
+              <point x="657.7375247703118" y="506.0" />
+              <point x="-27.5" y="14.5" />
+            </edge>
+            <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.GameStatus">
+              <point x="-22.875" y="-14.5" />
+              <point x="587.0736654056327" y="595.0" />
+              <point x="118.5" y="595.0" />
+              <point x="118.5" y="109.0" />
+              <point x="271.196315979103" y="109.0" />
+              <point x="-46.25" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.engine.Heros">
+              <point x="-35.38461538461536" y="-14.5" />
+              <point x="415.230716687684" y="506.0" />
+              <point x="184.4722197201707" y="506.0" />
+              <point x="-19.75" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.contracts.GameState">
+              <point x="14.153846153846132" y="-14.5" />
+              <point x="464.76917822614547" y="476.0" />
+              <point x="553.1990632318502" y="476.0" />
+              <point x="553.1990632318502" y="288.0" />
+              <point x="547.9875247703118" y="288.0" />
+              <point x="-8.75" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.contracts.Hero">
+              <point x="7.076923076923094" y="-14.5" />
+              <point x="457.69225514922243" y="466.0" />
+              <point x="493.7375247703118" y="466.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.engine.Game">
+              <point x="0.0" y="-14.5" />
+              <point x="450.61533207229934" y="456.0" />
+              <point x="458.647728637483" y="456.0" />
+              <point x="458.647728637483" y="357.0" />
+              <point x="453.55555305350396" y="357.0" />
+              <point x="26.333333333333314" y="14.5" />
+            </edge>
+            <edge source="warriors.client.console.ClientConsole" target="warriors.engine.Warriors">
+              <point x="-7.625" y="-14.5" />
+              <point x="602.3236654056327" y="585.0" />
+              <point x="450.61533207229934" y="585.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameItem">
+              <point x="0.0" y="-14.5" />
+              <point x="322.91020386717116" y="377.0" />
+              <point x="316.22221972017064" y="377.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="warriors.engine.Warriors" target="warriors.contracts.Map">
+              <point x="28.30769230769232" y="-14.5" />
+              <point x="478.92302437999166" y="496.0" />
+              <point x="619.7375247703118" y="496.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="52.5" y="332.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
