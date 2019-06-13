@@ -173,8 +173,42 @@ public class JdbcEngine {
         }
       }
 
-      public String updateHero() {
-        return null;
+      public void updateHero() {
+        getHeroes(); // Affiche la liste des Héro.
+        System.out.println("Quel Héro voulez-vous renomer (enter son ID)? :" ); // Input ID du Héro dont on veux changer le nom.
+        nombre = capture.nextInt();
+        capture.nextLine();
+
+        System.out.println("Quel nom voulez-vous pour ce Héro ? :" ); // Input nouveau nom pour le Héro choisi.
+        namePersonnage = capture.nextLine();
+
+        try{
+        
+                // JDBC.
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                // Connection.
+                connection = DriverManager.getConnection(url, user, passwd);
+                // Prepared requet into String.
+                query = "UPDATE hero SET nom = ? WHERE id = ? ";
+                // Prepared statement.
+                ps=connection.prepareStatement(query);
+                ps.setString(1, namePersonnage);
+                ps.setInt(2, nombre); 
+                // Execute the preparedstatement insert.
+                ps.executeUpdate();
+                //st=connection.createStatement();
+                // rs=st.executeQuery("SELECT id, type, nom, vie, attack, arme, bouclier from hero where id = ?");
+        
+                } catch (Exception e) {
+                  e.printStackTrace();
+                } finally {
+                  if (connection != null)
+                    try { /* Close connexion */
+                      connection.close();
+                    } catch ( SQLException ignore ) {
+                  }
+                }
+              
       }
 
       public void deleteHero() {

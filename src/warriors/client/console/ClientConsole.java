@@ -50,11 +50,13 @@ public class ClientConsole {
 		jdbcInstance.getHero(2); // Affiche un Héro en fonction de l'ID passé en paramètre; Méthode getHero.
 		System.out.println("*******************************************************");
 		System.out.println("Crée un nouveau Héro:");
-		jdbcInstance.createHero(); // Crée un nouveau Héro; Méthode createHero.
-		
+		//jdbcInstance.createHero(); // Crée un nouveau Héro; Méthode createHero.
+		System.out.println("*******************************************************");
+		System.out.println("Renome un Héro:");
+		jdbcInstance.updateHero(); // Renome un Héro; Méthode updateteHero.
 		System.out.println("*******************************************************");
 		System.out.println("Supprime un Héro selon son ID:");
-		jdbcInstance.deleteHero(); // Supprime un Héro selon son ID; Méthode deleteHero.
+		//jdbcInstance.deleteHero(); // Supprime un Héro selon son ID; Méthode deleteHero.
 		
 
 		WarriorsAPI warriors = new Warriors();
