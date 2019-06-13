@@ -119,7 +119,7 @@ public class JdbcEngine {
                 
       // CONNEXION A LA BASE DE DONNEES  
 	     try{
-        // Inputs pour le Héro.
+        // Inputs pour le Hero.
         System.out.println("Type (Magicien/Guerrier)? :" );
         typePersonnage = capture.nextLine();
 
@@ -148,7 +148,7 @@ public class JdbcEngine {
         query = "INSERT INTO hero ( id, type, nom, vie, image, attack, arme, bouclier ) VALUES ( null, ?, ?, ?, ?, ?, ?, ?)";
         // Prepared statement.
         ps=connection.prepareStatement(query);
-        // Assignation des paramètres.
+        // Assignation des parametres.
         ps.setString(1, typePersonnage);
         ps.setString(2, namePersonnage);
         ps.setInt(3, viePersonnage);
@@ -174,12 +174,12 @@ public class JdbcEngine {
       }
 
       public void updateHero() {
-        getHeroes(); // Affiche la liste des Héro.
-        System.out.println("Quel Héro voulez-vous renomer (enter son ID)? :" ); // Input ID du Héro dont on veux changer le nom.
+        getHeroes(); // Affiche la liste des Hero.
+        System.out.println("Quel Hero voulez-vous renomer (enter son ID)? :" ); // Input ID du Hero dont on veux changer le nom.
         nombre = capture.nextInt();
         capture.nextLine();
 
-        System.out.println("Quel nom voulez-vous pour ce Héro ? :" ); // Input nouveau nom pour le Héro choisi.
+        System.out.println("Quel nom voulez-vous pour ce Hero ? :" ); // Input nouveau nom pour le Hero choisi.
         namePersonnage = capture.nextLine();
 
         try{
@@ -229,7 +229,7 @@ public class JdbcEngine {
         rs.next(); 	
         idPersonnage = rs.getInt("id");
         // Inputs pour le Héro.
-        System.out.println("Quel Héro voulez-vous supprimer (de  1 à " + idPersonnage + ")? :" );
+        System.out.println("Quel Hero voulez-vous supprimer (de  1 à " + idPersonnage + ")? :" );
         nombre = capture.nextInt();
         capture.nextLine();
         // Prepared requet into String.

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>warriors.engine.Game</OriginalElement>
+  <nodes>
+    <node x="1088.8956043956043" y="11.0">warriors.contracts.GameStatus</node>
+    <node x="1657.5965276526742" y="0.0">warriors.engine.Personnage</node>
+    <node x="49.03846153846166" y="762.5">warriors.contracts.WarriorsAPI</node>
+    <node x="663.4384615384615" y="0.0">warriors.contracts.Hero</node>
+    <node x="829.8643847955314" y="718.5">warriors.engine.Game</node>
+    <node x="1667.5965276526742" y="389.0">warriors.engine.Guerrier</node>
+    <node x="288.53846153846155" y="22.0">warriors.contracts.Map</node>
+    <node x="495.1143847955314" y="1884.5">warriors.engine.Warriors</node>
+    <node x="1989.596527652674" y="0.0">warriors.engine.TimeStamp</node>
+    <node x="283.5384615384616" y="319.5">warriors.engine.Maps</node>
+    <node x="590.8643847955314" y="674.0">warriors.engine.Heros</node>
+    <node x="836.2368206929677" y="1193.0">warriors.engine.SpecialCases</node>
+    <node x="1382.5965276526742" y="1698.0">warriors.engine.JdbcEngine</node>
+    <node x="835.4893847955314" y="2327.0">warriors.client.console.ClientConsole</node>
+    <node x="464.53846153846155" y="287.0">warriors.contracts.GameState</node>
+    <node x="1067.5022676094395" y="520.0">warriors.contracts.GameItem</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="warriors.engine.Game" target="warriors.contracts.Map">
+      <point x="-29.14285714285711" y="-103.0" />
+      <point x="902.7215276526742" y="500.0" />
+      <point x="913.9511064072534" y="500.0" />
+      <point x="913.9511064072534" y="177.0" />
+      <point x="427.8241758241759" y="177.0" />
+      <point x="64.28571428571433" y="36.5" />
+    </edge>
+    <edge source="warriors.contracts.GameState" target="warriors.contracts.Hero">
+      <point x="0.0" y="-91.5" />
+      <point x="555.0384615384615" y="227.0" />
+      <point x="709.50989010989" y="227.0" />
+      <point x="-18.428571428571445" y="58.5" />
+    </edge>
+    <edge source="warriors.engine.Guerrier" target="warriors.engine.Personnage">
+      <point x="-66.75" y="-47.5" />
+      <point x="1734.3465276526742" y="364.0" />
+      <point x="1729.3465276526742" y="364.0" />
+      <point x="-71.75" y="169.5" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.engine.SpecialCases">
+      <point x="69.46153846153845" y="-93.0" />
+      <point x="715.0759232570699" y="1648.0" />
+      <point x="903.4034873596345" y="1648.0" />
+      <point x="-134.33333333333331" y="202.5" />
+    </edge>
+    <edge source="warriors.engine.SpecialCases" target="warriors.engine.Warriors">
+      <point x="134.33333333333343" y="202.5" />
+      <point x="1172.0701540263012" y="1668.0" />
+      <point x="761.3836155647621" y="1668.0" />
+      <point x="115.76923076923072" y="-93.0" />
+    </edge>
+    <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.Hero">
+      <point x="0.0" y="-59.0" />
+      <point x="195.53846153846166" y="500.0" />
+      <point x="152.20512820512818" y="500.0" />
+      <point x="152.20512820512818" y="207.0" />
+      <point x="672.6527472527473" y="207.0" />
+      <point x="-55.28571428571422" y="58.5" />
+    </edge>
+    <edge source="warriors.client.console.ClientConsole" target="warriors.engine.JdbcEngine">
+      <point x="83.4375" y="-70.0" />
+      <point x="1052.4268847955314" y="2297.0" />
+      <point x="1440.0965276526742" y="2297.0" />
+      <point x="-57.5" y="279.5" />
+    </edge>
+    <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.GameState">
+      <point x="-50.0625" y="-70.0" />
+      <point x="918.9268847955314" y="2287.0" />
+      <point x="22.0" y="2287.0" />
+      <point x="22.0" y="1173.0" />
+      <point x="352.5384615384616" y="1173.0" />
+      <point x="352.5384615384616" y="500.0" />
+      <point x="509.78846153846155" y="500.0" />
+      <point x="-45.25" y="91.5" />
+    </edge>
+    <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.WarriorsAPI">
+      <point x="-83.4375" y="-70.0" />
+      <point x="885.5518847955314" y="2297.0" />
+      <point x="11.0" y="2297.0" />
+      <point x="11.0" y="1163.0" />
+      <point x="122.28846153846166" y="1163.0" />
+      <point x="-73.25" y="59.0" />
+    </edge>
+    <edge source="warriors.engine.SpecialCases" target="warriors.engine.Heros">
+      <point x="-80.60000000000008" y="-202.5" />
+      <point x="957.1368206929676" y="1143.0" />
+      <point x="755.1143847955314" y="1143.0" />
+      <point x="54.75" y="147.5" />
+    </edge>
+    <edge source="warriors.engine.Game" target="warriors.contracts.GameStatus">
+      <point x="58.28571428571422" y="-103.0" />
+      <point x="990.1500990812456" y="500.0" />
+      <point x="997.423168498168" y="500.0" />
+      <point x="997.423168498168" y="257.0" />
+      <point x="1116.6456043956043" y="257.0" />
+      <point x="-27.75" y="47.5" />
+    </edge>
+    <edge source="warriors.engine.Game" target="warriors.contracts.GameState">
+      <point x="-87.42857142857144" y="-103.0" />
+      <point x="844.43581336696" y="500.0" />
+      <point x="630.4551282051283" y="500.0" />
+      <point x="75.41666666666674" y="91.5" />
+    </edge>
+    <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameStatus">
+      <point x="161.2" y="-202.5" />
+      <point x="1198.9368206929678" y="1173.0" />
+      <point x="1284.0022676094393" y="1173.0" />
+      <point x="1284.0022676094393" y="267.0" />
+      <point x="1153.6456043956043" y="267.0" />
+      <point x="9.25" y="47.5" />
+    </edge>
+    <edge source="warriors.contracts.GameState" target="warriors.contracts.Map">
+      <point x="-60.33333333333337" y="-91.5" />
+      <point x="494.7051282051282" y="197.0" />
+      <point x="384.967032967033" y="197.0" />
+      <point x="21.428571428571445" y="36.5" />
+    </edge>
+    <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.Hero">
+      <point x="16.6875" y="-70.0" />
+      <point x="985.6768847955314" y="2277.0" />
+      <point x="1340.190729147901" y="2277.0" />
+      <point x="1340.190729147901" y="147.0" />
+      <point x="783.2241758241757" y="147.0" />
+      <point x="55.285714285714334" y="58.5" />
+    </edge>
+    <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameState">
+      <point x="-161.2000000000001" y="-202.5" />
+      <point x="876.5368206929677" y="1153.0" />
+      <point x="580.3643847955314" y="1153.0" />
+      <point x="580.3643847955314" y="500.0" />
+      <point x="600.2884615384615" y="500.0" />
+      <point x="45.25" y="91.5" />
+    </edge>
+    <edge source="warriors.engine.Game" target="warriors.contracts.Hero">
+      <point x="29.14285714285711" y="-103.0" />
+      <point x="961.0072419383885" y="490.0" />
+      <point x="986.423168498168" y="490.0" />
+      <point x="986.423168498168" y="157.0" />
+      <point x="764.7956043956044" y="157.0" />
+      <point x="36.85714285714289" y="58.5" />
+    </edge>
+    <edge source="warriors.engine.SpecialCases" target="warriors.engine.Game">
+      <point x="-5.6843418860808015E-14" y="-202.5" />
+      <point x="1037.7368206929677" y="1173.0" />
+      <point x="999.8643847955314" y="1173.0" />
+      <point x="68.0" y="103.0" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.engine.Maps">
+      <point x="-92.61538461538464" y="-93.0" />
+      <point x="552.9990001801468" y="1658.0" />
+      <point x="363.5384615384616" y="1658.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.Map">
+      <point x="-116.8125" y="-70.0" />
+      <point x="852.1768847955314" y="2307.0" />
+      <point x="0.0" y="2307.0" />
+      <point x="0.0" y="177.0" />
+      <point x="299.2527472527472" y="177.0" />
+      <point x="-64.28571428571433" y="36.5" />
+    </edge>
+    <edge source="warriors.contracts.GameState" target="warriors.contracts.GameStatus">
+      <point x="60.33333333333337" y="-91.5" />
+      <point x="615.3717948717949" y="247.0" />
+      <point x="1098.1456043956043" y="247.0" />
+      <point x="-46.25" y="47.5" />
+    </edge>
+    <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.GameState">
+      <point x="97.66666666666674" y="-59.0" />
+      <point x="293.2051282051284" y="490.0" />
+      <point x="479.6217948717949" y="490.0" />
+      <point x="-75.41666666666663" y="91.5" />
+    </edge>
+    <edge source="warriors.engine.Maps" target="warriors.contracts.Map">
+      <point x="-1.1368683772161603E-13" y="-59.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="warriors.engine.Heros" target="warriors.contracts.Hero">
+      <point x="0.0" y="-147.5" />
+      <point x="700.3643847955314" y="237.0" />
+      <point x="727.9384615384615" y="237.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="warriors.contracts.WarriorsAPI" target="warriors.contracts.Map">
+      <point x="-97.66666666666674" y="-59.0" />
+      <point x="97.87179487179492" y="500.0" />
+      <point x="135.3339120578869" y="500.0" />
+      <point x="135.3339120578869" y="197.0" />
+      <point x="342.1098901098901" y="197.0" />
+      <point x="-21.428571428571445" y="36.5" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.contracts.GameStatus">
+      <point x="138.9230769230769" y="-93.0" />
+      <point x="784.5374617186083" y="1678.0" />
+      <point x="1323.6522676094394" y="1678.0" />
+      <point x="1323.6522676094394" y="257.0" />
+      <point x="1172.1456043956043" y="257.0" />
+      <point x="27.75" y="47.5" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.contracts.WarriorsAPI">
+      <point x="-115.76923076923072" y="-93.0" />
+      <point x="529.8451540263006" y="1668.0" />
+      <point x="200.28105146219804" y="1668.0" />
+      <point x="200.28105146219804" y="1163.0" />
+      <point x="268.78846153846166" y="1163.0" />
+      <point x="73.25" y="59.0" />
+    </edge>
+    <edge source="warriors.client.console.ClientConsole" target="warriors.contracts.GameStatus">
+      <point x="50.0625" y="-70.0" />
+      <point x="1019.0518847955314" y="2287.0" />
+      <point x="1372.0965276526742" y="2287.0" />
+      <point x="1372.0965276526742" y="137.0" />
+      <point x="1190.6456043956043" y="137.0" />
+      <point x="46.25" y="47.5" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.engine.Heros">
+      <point x="0.0" y="-93.0" />
+      <point x="645.6143847955314" y="1618.0" />
+      <point x="611.4868206929677" y="1618.0" />
+      <point x="611.4868206929677" y="1173.0" />
+      <point x="645.6143847955314" y="1173.0" />
+      <point x="-54.75" y="147.5" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.contracts.GameState">
+      <point x="-46.307692307692264" y="-93.0" />
+      <point x="599.3066924878392" y="1638.0" />
+      <point x="553.2505787245536" y="1638.0" />
+      <point x="553.2505787245536" y="500.0" />
+      <point x="539.9551282051282" y="500.0" />
+      <point x="-15.083333333333371" y="91.5" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.contracts.Hero">
+      <point x="-69.46153846153845" y="-93.0" />
+      <point x="576.152846333993" y="1648.0" />
+      <point x="454.03846153846155" y="1648.0" />
+      <point x="454.03846153846155" y="217.0" />
+      <point x="691.0813186813186" y="217.0" />
+      <point x="-36.85714285714289" y="58.5" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.engine.Game">
+      <point x="23.15384615384619" y="-93.0" />
+      <point x="668.7682309493775" y="1628.0" />
+      <point x="814.7368206929677" y="1628.0" />
+      <point x="814.7368206929677" y="1163.0" />
+      <point x="863.8643847955314" y="1163.0" />
+      <point x="-68.0" y="103.0" />
+    </edge>
+    <edge source="warriors.client.console.ClientConsole" target="warriors.engine.Warriors">
+      <point x="-16.6875" y="-70.0" />
+      <point x="952.3018847955314" y="2277.0" />
+      <point x="645.6143847955314" y="2277.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="warriors.engine.SpecialCases" target="warriors.contracts.GameItem">
+      <point x="80.59999999999997" y="-202.5" />
+      <point x="1118.3368206929676" y="1173.0" />
+      <point x="1170.5022676094395" y="1173.0" />
+      <point x="0.0" y="301.5" />
+    </edge>
+    <edge source="warriors.engine.Warriors" target="warriors.contracts.Map">
+      <point x="-138.9230769230769" y="-93.0" />
+      <point x="506.6913078724545" y="1678.0" />
+      <point x="38.53846153846166" y="1678.0" />
+      <point x="38.53846153846166" y="187.0" />
+      <point x="320.68131868131866" y="187.0" />
+      <point x="-42.85714285714289" y="36.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="612.0" y="397.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
